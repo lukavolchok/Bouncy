@@ -1,0 +1,27 @@
+.contact {
+    text-align: center;
+    padding-top: 80px;
+
+    &__title {
+        font-family: $ssp;
+        font-size: 20px;
+        line-height: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #333b46;
+    }
+
+    &__description {
+        font-family: $os;
+        font-size: 14px;
+        line-height: 25px;
+        padding-top: 35px;
+        color: #81868e;
+        padding-bottom: 65px;
+    }
+    
+    #map {
+        width: 100%;
+        height: 440px;
+    }
+}

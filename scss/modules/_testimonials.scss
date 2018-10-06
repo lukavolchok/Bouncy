@@ -1,0 +1,105 @@
+.testimonials {
+    background: #f3f3f3;
+    text-align: center;
+    height: 630px;
+
+    &__title {
+        padding-top: 70px;
+        font-family: $ssp;
+        font-size: 20px;
+        color: #333b46;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        padding-top: 30px;
+        font-family: $os;
+        font-size: 14px;
+        line-height: 25px;
+        color: #81868e;
+    }
+
+    .slider {
+        width: 100%;
+        background: #fff;
+        height: 320px;
+
+        &__wrapper {
+            position: relative;
+            padding-top: 65px;
+        }
+
+        &__item {
+            height: 320px;
+
+        }
+
+        &__img {
+            padding-top: 45px;
+            padding-left: 100px;
+        }
+
+        &__text {
+            padding-top: 50px;
+            text-align: left;
+        }
+
+        &__par {
+            font-family: $os;
+            font-size: 16px;
+            line-height: 28px;
+            color: #81868e;
+        }
+
+        &__author {
+            text-transform: uppercase;
+            padding-top: 20px;
+            color: #19bd9a;
+            font-family: $os;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__job {
+            font-family: $os;
+            font-size: 14px;
+            line-height: 20px;
+            color: #464646;
+
+        }
+
+        &__pages {
+            width: 100%;
+            margin-top: -120px;
+
+            .slick-dots {
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+
+            li {
+
+                button {
+                    border: 1px solid #19bd9a;
+                    border-radius: 50%;
+                    position: absolute;
+                    background: #fff;
+                    overflow: hidden;
+                    text-indent: -30px;
+                }
+
+                button:hover {
+                    background: #19bd9a;
+                }
+
+                &.slick-active {
+                    button {
+                        background: #19bd9a;
+                    }
+                }
+            }
+        }
+    }
+}

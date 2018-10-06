@@ -1,0 +1,122 @@
+.team {
+    text-align: center;
+
+    &__title {
+        font-family: $ssp;
+        font-size: 20px;
+        color: #333b46;
+        text-transform: uppercase;
+        padding-top: 75px;
+    }
+
+    &__description {
+        font-family: $os;
+        font-size: 14px;
+        line-height: 25px;
+        color: #81868e;
+        padding-top: 30px;
+    }
+
+    .slider {
+        width: 100%;
+        display: flex;
+        padding-top: 35px;
+
+        &__wrapper {
+            height: 500px;
+            position: relative;
+        }
+
+        &__pages {
+            width: 100%;
+            bottom: 40px;
+
+            .slick-dots {
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+            }
+
+            li {
+    
+                button {
+                    position: absolute;
+                    height: 17px;
+                    border: 1px solid #19bd9a;
+                    border-radius: 50%;
+                    background: #fff;
+                    overflow: hidden;
+                    text-indent: -30px;
+                    cursor: pointer;
+                    
+                }
+
+                button:hover {
+                    background: #19bd9a;
+                }
+                
+                &.slick-active {
+                    button {
+                        background: #19bd9a;
+                    }
+                }
+            }
+    
+        }
+        
+
+        &__image {
+            height: 365px;
+        }
+
+        &__text {
+            text-align: right;
+            padding-top: 50px;
+            position: relative;
+            
+            &__img {
+                height: 42px;
+                width: 4px;
+                position: absolute;
+                background: url('../images/line.jpg') no-repeat top center;
+                background-size: contain;
+                top: 50px;
+                left: 500px;
+
+            }
+
+            /* &::after {
+                content: '';
+                background: url('../images/line.jpg') no-repeat;
+                background-size: contain;
+            } */
+            
+        }
+
+        &__title {
+                font-family: $os;
+                font-size: 20px;
+                color: #464646;
+        }
+
+        &__description {
+            font-family: $ssp;
+            font-size: 14px;
+            line-height: 25px;
+            color: #81868e;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        &__par {
+            font-family: $os;
+            font-size: 14px;
+            line-height: 25px;
+            color: #81868e;
+            padding-top: 20px;
+
+        }
+    }
+
+}
